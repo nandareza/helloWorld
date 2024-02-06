@@ -1,8 +1,6 @@
 install.packages("rlang")
 library(C50)
 
-output_oversampled_random <- output_oversampled %>%
-  sample_frac(1)
 m1 <- C5.0(output_oversampled[1:3257,-7], output_oversampled[1:3257,7])
 m1
 summary (m1)
